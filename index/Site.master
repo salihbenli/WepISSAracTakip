@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="yazi.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="Images/arka.jpg" white="%100">
+    <form runat="server">
+   <table  border="0" cellpadding="0" cellspacing="0" 
+            height="128" width="100%">
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;</td>
+                <td >
+                    <img src="Images/logos.png" align="center" width="%100" />
+                    </td>
+            </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" height="458" width="100%">
+            <tr>
+                <td valign="top" width="16%">
+                    <table border="0" cellpadding="0" cellspacing="0" width="188">
+                        
+                        <tr>
+                          
+                            <td>
+                                <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                    <tr>
+                                        <td class="baslik2">
+                                            
+                                        </td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td class="sollink">
+                                           <div id="menu">
+                                           <asp:HyperLink ID="hypanamenü" runat="server" ForeColor="Black"><h1>İşlem Menüsü</h1></asp:HyperLink>
+                                            <ul>
+                                                  <li><a href="Adminler.aspx">Adminler</a></li>
+                                                 <li><a href="AracTanimlama.aspx">Araç Tanımlama</a></li>
+                                                 <li><a href="Aracİslemleri.aspx">Araç İşlemleri</a></li>
+                                                 <li><a href="SürücüDetay.aspx">Sürücü Detay</a></li>
+                                                 <li><a href="YakıtTakip.aspx">Yakıt Takip İşlemleri</a></li>
+                                                  <li><a href="BakımveOnarım.aspx">Bakım ve Onarım</a></li>
+                                                 <li><a href="Hatırlatmaİslemleri.aspx">Hatırlatma İşlemleri</a></li>
+                                                  <li><a href="Login.aspx">Çıkış</a></li>
+                                                 </ul>
+                                            </div>
+                                          
+                                        </td>
+                                    </tr>
+                                 
+
+                                </table>
+                       
+                        </tr>
+                        
+                    </table>
+                </td>
+              <td valign="top" width="84%">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                       
+                        <tr>
+                            
+                          
+                            <td>
+                                <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                    <tr>
+                                        <td class="baslik2">
+                                            
+                                           
+                                           
+                                            
+                                           
+                                           <asp:Label ID="lblSayfaBaslik" runat="server" ForeColor="Black" Font-Bold="True" 
+                                                Font-Size="16pt"></asp:Label>
+                                            
+                                           
+                                           
+                                            
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr color="#CCCCCC" size="1px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          
+                                            
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            
+                          
+                        </tr>
+                       
+                  </table>
+                </td>
+            </tr>
+        </table>
+        <table border="0" cellpadding="2" cellspacing="2" width="100%">
+        <tr>
+                                        <td>
+                                            <hr color="#CCCCCC" size="1px" />
+                                        </td>
+                                    </tr>
+            <tr>
+                <td align="center" class="soluk">
+                    S © SALİHBENLİ</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
